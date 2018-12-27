@@ -2,44 +2,62 @@
 
 namespace VrGrabber
 {
-    public class Device {
+    public class Device
+    {
         static IDevice _instance;
-        public static IDevice instance {
-            get {
-                if (_instance == null) {
+        public static IDevice instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    if (NewtonVR.NVRPlayer.Instance)
+                    {
+                        _instance = new VrgNvrDevice();
+                    }
+                    else
+                    {
 #if !UNITY_WSA
-                    _instance = new VrgOculusTouchDevice();
+                        _instance = new VrgOculusTouchDevice();
 #elif UNITY_WSA
                     _instance = new VrgWinMRMotionControllerDevice();
 #else
 #error "Not implemented."
 #endif
+                    }
+
                 }
                 return _instance;
             }
         }
 
-        public Vector3 GetLocalPosition(ControllerSide side) {
+        public Vector3 GetLocalPosition(ControllerSide side)
+        {
             return _instance.GetLocalPosition(side);
         }
 
-        public Quaternion GetLocalRotation(ControllerSide side) {
+        public Quaternion GetLocalRotation(ControllerSide side)
+        {
             return _instance.GetLocalRotation(side);
         }
 
-        public float GetHold(ControllerSide side) {
+        public float GetHold(ControllerSide side)
+        {
             return _instance.GetHold(side);
         }
 
-        public bool GetHover(ControllerSide side) {
+        public bool GetHover(ControllerSide side)
+        {
             return _instance.GetHover(side);
         }
 
-        public bool GetClick(ControllerSide side) {
+        public bool GetClick(ControllerSide side)
+        {
             return _instance.GetClick(side);
         }
 
-        public Vector2 GetCoord(ControllerSide side) {
+        public Vector2 GetCoord(ControllerSide side)
+        {
             return _instance.GetCoord(side);
         }
     }

@@ -1,0 +1,127 @@
+fileFormatVersion: 2
+guid: 85ee60ab50bad49d0856ff791027840e
+timeCreated: 1499243184
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: popArt_Assymetry
+    100002: popArt_Box
+    100004: popArt_Cylinder
+    100006: popArt_Diamond
+    100008: popArt_doublePyramid
+    100010: popArt_FlatTriangle
+    100012: popArt_HalfMoon
+    100014: popArt_Hatbox
+    100016: popArt_Pyramid
+    100018: popArt_Triangle
+    100020: //RootNode
+    400000: popArt_Assymetry
+    400002: popArt_Box
+    400004: popArt_Cylinder
+    400006: popArt_Diamond
+    400008: popArt_doublePyramid
+    400010: popArt_FlatTriangle
+    400012: popArt_HalfMoon
+    400014: popArt_Hatbox
+    400016: popArt_Pyramid
+    400018: popArt_Triangle
+    400020: //RootNode
+    2300000: popArt_Assymetry
+    2300002: popArt_Box
+    2300004: popArt_Cylinder
+    2300006: popArt_Diamond
+    2300008: popArt_doublePyramid
+    2300010: popArt_FlatTriangle
+    2300012: popArt_HalfMoon
+    2300014: popArt_Hatbox
+    2300016: popArt_Pyramid
+    2300018: popArt_Triangle
+    3300000: popArt_Assymetry
+    3300002: popArt_Box
+    3300004: popArt_Cylinder
+    3300006: popArt_Diamond
+    3300008: popArt_doublePyramid
+    3300010: popArt_FlatTriangle
+    3300012: popArt_HalfMoon
+    3300014: popArt_Hatbox
+    3300016: popArt_Pyramid
+    3300018: popArt_Triangle
+    4300000: popArt_Box
+    4300002: popArt_Pyramid
+    4300004: popArt_Cylinder
+    4300006: popArt_doublePyramid
+    4300008: popArt_Triangle
+    4300010: popArt_Diamond
+    4300012: popArt_Hatbox
+    4300014: popArt_Assymetry
+    4300016: popArt_FlatTriangle
+    4300018: popArt_HalfMoon
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
