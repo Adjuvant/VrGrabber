@@ -11,21 +11,22 @@ namespace VrGrabber
             {
                 if (_instance == null)
                 {
-                    if (NewtonVR.NVRPlayer.Instance)
+                    switch (AppSetting.Instance.applicationType)
                     {
-                        _instance = new VrgNvrDevice();
-                    }
-                    else
-                    {
-#if !UNITY_WSA
-                        _instance = new VrgOculusTouchDevice();
-#elif UNITY_WSA
+                        case AppSetting.XRSDK.NVR:
+                            _instance = new VrgNvrDevice();
+                            break;
+                        case AppSetting.XRSDK.Oculus:
+                            _instance = new VrgOculusTouchDevice();
+                            break;
+                        case AppSetting.XRSDK.WindowsMR:
+#if UNITY_WSA
                     _instance = new VrgWinMRMotionControllerDevice();
-#else
-#error "Not implemented."
+#elif !UNITY_WSA
+                            Debug.LogError("WindowsMR Not implemented/Setup.");
 #endif
+                            break;
                     }
-
                 }
                 return _instance;
             }
