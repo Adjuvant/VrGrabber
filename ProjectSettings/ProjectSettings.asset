@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: fd7088cec14f8184dae9a3d97d9e6999
+  productGUID: 36d652e962b93534aaafa3e415166741
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -268,7 +268,7 @@ PlayerSettings:
       m_Icon: {fileID: 0}
       m_Width: 1
       m_Height: 1
-      m_Kind: 40168
+      m_Kind: 64379
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -304,8 +304,8 @@ PlayerSettings:
   - m_BuildTarget: Standalone
     m_Enabled: 1
     m_Devices:
-    - Oculus
     - OpenVR
+    - Oculus
   - m_BuildTarget: Tizen
     m_Enabled: 0
     m_Devices: []
@@ -626,7 +626,7 @@ PlayerSettings:
   webGLUseWasm: 0
   webGLCompressionFormat: 1
   scriptingDefineSymbols:
-    1: NVR_SteamVR;NVR_Oculus
+    1: NVR_SteamVR
   platformArchitecture: {}
   scriptingBackend:
     Standalone: 0
