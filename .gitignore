@@ -700,3 +700,7 @@ Assets/SteamVR.meta
 Assets/OVR.meta
 Assets/Plugins.meta
 Assets/Oculus/
+Assets/VRTK/
+Assets/VRTK.meta
+Assets/Resources/OvrAvatarSettings.asset.meta
+Assets/Resources/OvrAvatarSettings.asset

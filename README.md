@@ -11,7 +11,7 @@ VrGrabber
 ![VrGrabber Image 2](https://raw.githubusercontent.com/wiki/hecomi/VrGrabber/grabber2.PNG)
 ![VrGrabber Image 3](https://raw.githubusercontent.com/wiki/hecomi/VrGrabber/grabber3.PNG)
 
--   Currently only Oculus SDK is supported (OpenVR will be supported soon).
+-   Currently only Oculus SDK, NewtonVR and VRTK is supported (Unity native and OpenVR will be supported soon).
 
 Demo
 ----
@@ -26,12 +26,28 @@ Setup
 3.  Add `Vrg Left Grabber` and `Vrg Right Grabber` from *VrGrabber > Prefabs*
     to `TrackingSpace` under `OVRCameraRig`.
 
+Dependencies
+-------
+
++ Oculus SDK 1.35
++ NewtonVR 1.24 
++ VRTK 3.3
++ SteamVR 1.2.3
+
+All these folders are hidden in the git uploads!
+
+TODO
+-------
++ [ ] Cross platform input control, currently uses input manager that is a piss-take.
+
+
 License
 -------
 
 The MIT License (MIT)
 
 Copyright (c) 2017 hecomi
+Copyright (c) 2019 adjuvant
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
