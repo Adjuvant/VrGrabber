@@ -29,10 +29,7 @@ namespace VrGrabber
         public float GetHold(ControllerSide side)
         {
             // Using grip button, not trigger
-            var holdLeft = Input.GetAxis("Axis1D_PrimaryHandTrigger");
-            var holdRight = Input.GetAxis("Axis1D_SecondaryHandTrigger");
-            
-            return side == ControllerSide.Left ? holdLeft : holdRight;
+            return GetOVRController(side).HoldButtonAxis;
         }
 
         public bool GetHover(ControllerSide side)
@@ -47,13 +44,7 @@ namespace VrGrabber
 
         public Vector2 GetCoord(ControllerSide side)
         {
-            var xLeft = Input.GetAxis("Axis2D_PrimaryThumbstick_Horizontal");
-            var yLeft = Input.GetAxis("Axis2D_PrimaryThumbstick_Vertical");
-            var xRight = Input.GetAxis("Axis2D_SecondaryThumbstick_Horizontal");
-            var yRight = Input.GetAxis("Axis2D_SecondaryThumbstick_Vertical");
-            return (side == ControllerSide.Left) ?
-                 new Vector2(xLeft, yLeft) :
-                 new Vector2(xRight, yRight);
+            return GetOVRController(side).TouchAxis;
         }
     }
 

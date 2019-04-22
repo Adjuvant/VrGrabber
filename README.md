@@ -11,7 +11,7 @@ VrGrabber
 ![VrGrabber Image 2](https://raw.githubusercontent.com/wiki/hecomi/VrGrabber/grabber2.PNG)
 ![VrGrabber Image 3](https://raw.githubusercontent.com/wiki/hecomi/VrGrabber/grabber3.PNG)
 
--   Currently only Oculus SDK, NewtonVR and VRTK is supported (Unity native and OpenVR will be supported soon).
+-   Currently only Oculus SDK, NewtonVR (Steam and Oculus) are supported ( VRTK, Unity native and native OpenVR will be supported soon).
 
 Demo
 ----
@@ -24,13 +24,15 @@ Setup
 1.  Download the latest *.unitypackage* from [Release](https://github.com/hecomi/VrGrabber/releases) page.
 2.  Import it into your project.
 3.  Add `Vrg Left Grabber` and `Vrg Right Grabber` from *VrGrabber > Prefabs*
-    to `TrackingSpace` under `OVRCameraRig`.
+    to your VR tracking rig e.g. Oculus: `TrackingSpace` under `OVRCameraRig`.
 
 Dependencies
 -------
 
+When importing be careful about overwriting project and input settings!
+
 + Oculus SDK 1.35
-+ NewtonVR 1.24 
++ NewtonVR 1.24
 + VRTK 3.3
 + SteamVR 1.2.3
 
@@ -38,7 +40,9 @@ All these folders are hidden in the git uploads!
 
 TODO
 -------
-+ [ ] Cross platform input control, currently uses input manager that is a piss-take.
++ [ ] VRTK input control
++ [ ] Native UnityXR input control
++ [ ] Native SteamVR input control
 
 
 License
